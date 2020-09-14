@@ -1,4 +1,4 @@
-module Distillery
+module Distillery.Extractor
 where
 
 import Distillery.Prelude hiding (lookup)
