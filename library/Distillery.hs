@@ -6,6 +6,7 @@ import qualified Data.Aeson as Aeson
 import qualified Data.Attoparsec.Text as AttoparsecText
 import qualified Data.HashMap.Strict as HashMap
 import qualified Data.List as List
+import qualified Data.Text.Encoding as Text
 import qualified AesonValueParser
 
 
@@ -65,3 +66,7 @@ attoparseText parser =
 parseAesonValue :: AesonValueParser.Value a -> Extractor Aeson.Value a
 parseAesonValue parser =
   Extractor (AesonValueParser.runWithTextError parser)
+
+decodeUtf8 :: Extractor ByteString Text
+decodeUtf8 =
+  Extractor (first (fromString . show) . Text.decodeUtf8')
