@@ -32,15 +32,15 @@ extract :: Extractor a b -> a -> Either Text b
 extract =
   coerce
 
-lookupInHashMap :: (Hashable a, Eq a) => a -> Extractor (HashMap a b) b
-lookupInHashMap key =
+atHashMapKey :: (Hashable a, Eq a) => a -> Extractor (HashMap a b) b
+atHashMapKey key =
   Extractor $ \ map ->
     case HashMap.lookup key map of
       Just value -> Right value
       Nothing -> Left "Key not found"
 
-dictionary :: (Hashable a, Eq a, Show a) => Text -> [(a, b)] -> Extractor a b
-dictionary label mappingList =
+enum :: (Hashable a, Eq a, Show a) => Text -> [(a, b)] -> Extractor a b
+enum label mappingList =
   let
     expectedValuesText =
       fromString (show (fmap fst mappingList))
