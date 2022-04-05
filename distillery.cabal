@@ -21,6 +21,7 @@ library
   default-language: Haskell2010
   exposed-modules:
     Distillery.Extractor
+    Distillery.Refine
   other-modules:
     Distillery.Prelude
   build-depends:
