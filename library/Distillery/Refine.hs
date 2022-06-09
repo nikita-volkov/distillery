@@ -2,13 +2,13 @@ module Distillery.Refine where
 
 import Distillery.Prelude hiding (lookup)
 
--- *
+-------------------------
 
 refine :: Refine i o -> i -> Either (Text, [Text]) o
 refine =
   error "TODO"
 
--- *
+-------------------------
 
 newtype Refine i o
   = -- |

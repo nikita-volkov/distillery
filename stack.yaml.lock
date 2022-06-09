@@ -5,15 +5,15 @@
 
 packages:
 - completed:
-    hackage: aeson-value-parser-0.19.6@sha256:ccd8424b17fd5608c3f1f7e51c7d4b77ff64cd409b51387759d27fc0e6e419bc,2054
     pantry-tree:
-      size: 454
-      sha256: a2fa5c7577470e6472dcc9f9c3826486bfabce337149555a5297c11807bfe993
+      sha256: 4c700792b51236a70e364ac79c1cd0d197596264c0f57099eb5cea193b663c1b
+      size: 408
+    hackage: aeson-value-parser-0.19.7@sha256:c114ae7deb86b55154a408896602f9ce61555ac6fd044e8e209c9c544ad2f4db,2054
   original:
-    hackage: aeson-value-parser-0.19.6
+    hackage: aeson-value-parser-0.19.7
 snapshots:
 - completed:
-    size: 545842
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/nightly/2022/4/4.yaml
-    sha256: c4a9ea936518c6d01ed21a6a838c880781d29b4c5533a5d10187d45968733a3e
-  original: nightly-2022-04-04
+    sha256: 869e23c4f7367895ae63b129255b70bc8b4b965229aa258f6c50141c6b10ae76
+    size: 607265
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/nightly/2022/6/8.yaml
+  original: nightly-2022-06-08
