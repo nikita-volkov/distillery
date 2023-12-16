@@ -1,3 +1,5 @@
+{-# OPTIONS_GHC -Wno-redundant-constraints #-}
+
 module Distillery.Extractor where
 
 import qualified AesonValueParser
